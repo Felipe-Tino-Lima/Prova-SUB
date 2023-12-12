@@ -1,0 +1,14 @@
+### Listar Imc
+GET https://localhost:7091/api/imc/listar
+
+### Buscar Imc
+GET https://localhost:7091/api/imc/buscar/Felipe
+
+### Cadastrar Imc
+POST https://localhost:7091/api/imc/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "rosa",
+    "Nascimento" : "10/06/2001"
+}

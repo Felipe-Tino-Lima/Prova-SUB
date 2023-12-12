@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <button (click)="sidenav.toggle()" mat-icon-button>
+    </button>
+    <span> Treino </span>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/pages/imc/listar">
+          <div class="item">
+            <span>Listar IMCs</span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/imc/cadastrar">
+          <div class="item">
+            <span>Cadastrar IMC</span>
+          </div>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet>
+      </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  
